@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 import { Input } from "./Input/Input";
 import { ListOfTodos } from "./ListOfTodos/ListOfTodos";
 import { ITodo } from "../../interfaces/interfaces";
