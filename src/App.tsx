@@ -1,13 +1,7 @@
-import { Header } from "./components/Header/Header";
-import { Todos } from "./components/Todos/Todos";
+import { MainPage } from "./pages/MainPage";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Todos />
-    </>
-  );
+  return <MainPage />;
 }
 
 export default App;

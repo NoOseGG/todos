@@ -33,7 +33,7 @@ const Todos: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-full bg-zinc-950 flex items-start justify-center relative">
+    <div className="w-full h-full grow bg-zinc-950 flex items-start justify-center relative">
       <Input handleAddTodo={handleAddTodo} />
       <div className="w-4/5 h-full mx-auto flex justify-center">
         <ListOfTodos todos={todos} handleDeleteTodo={handleDeleteTodo} />
