@@ -7,8 +7,8 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-2">
         <img className="w-6 h-9" src={logo} alt="rocket" />
         <span>
-          <span className="text-5xl text-blue-300 font-black">to</span>
-          <span className="text-5xl text-purple-600 font-black">do</span>
+          <span className="text-5xl text-lightBlue font-black">to</span>
+          <span className="text-5xl text-lightPurple font-black">do</span>
         </span>
       </div>
     </header>
