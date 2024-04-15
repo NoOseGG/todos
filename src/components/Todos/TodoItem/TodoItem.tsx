@@ -22,7 +22,7 @@ const TodoItem: React.FC<Props> = ({ todo, handleDeleteTodo, handleToggleCheck }
       >
         {todo.isChecking && <IoIosCheckmark className="w-8 h-8" />}
       </span>
-      <div className={`text-base grow ${todo.isChecking && 'line-through'}`}>{todo.title}</div>
+      <div className={`text-base grow ${todo.isChecking && 'line-through text-lightGray'}`}>{todo.title}</div>
       <FaRegTrashAlt
         className="cursor-pointer"
         onClick={() => handleDeleteTodo(todo.id)}
