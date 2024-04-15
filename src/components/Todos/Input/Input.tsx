@@ -25,7 +25,7 @@ const Input: React.FC<Props> = ({ handleAddTodo }) => {
         onChange={handleChangeInput}
       />
       <button
-        className="w-24 h-14 bg-blueDark border-2 border-black rounded-md hover:bg-blue-400"
+        className="w-24 h-14 bg-blueDark border-2 border-darkGray rounded-md hover:bg-blue-400"
         onClick={() => handleClick()}
       >
         <div className="h-full w-full flex items-center justify-center gap-2">

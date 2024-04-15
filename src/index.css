@@ -1,8 +1,8 @@
 /* @import-normalize; */
+@import "./styles/reset.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./styles/reset.css";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
