@@ -5,9 +5,14 @@ import { TodoItem } from "../TodoItem/TodoItem";
 interface Props {
   todos: ITodo[];
   handleDeleteTodo: (id: number) => void;
+  handleToggleCheck: (id: number) => void;
 }
 
-const ListOfTodos: React.FC<Props> = ({ todos, handleDeleteTodo }) => {
+const ListOfTodos: React.FC<Props> = ({
+  todos,
+  handleDeleteTodo,
+  handleToggleCheck,
+}) => {
   return (
     <div className="w-2/4 h-auto mt-16 flex flex-col gap-2">
       {todos.map((todo) => (
@@ -15,6 +20,7 @@ const ListOfTodos: React.FC<Props> = ({ todos, handleDeleteTodo }) => {
           todo={todo}
           key={todo.id}
           handleDeleteTodo={handleDeleteTodo}
+          handleToggleCheck={handleToggleCheck}
         />
       ))}
     </div>
