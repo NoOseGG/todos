@@ -1,6 +1,7 @@
 import React from "react";
 import { ITodo } from "../../../interfaces/interfaces";
 import { TodoItem } from "../TodoItem/TodoItem";
+import { MdFoundation } from "react-icons/md";
 
 interface Props {
   todos: ITodo[];
@@ -38,14 +39,22 @@ const ListOfTodos: React.FC<Props> = ({
           </span>
         </div>
       </div>
-      {todos.map((todo) => (
-        <TodoItem
-          todo={todo}
-          key={todo.id}
-          handleDeleteTodo={handleDeleteTodo}
-          handleToggleCheck={handleToggleCheck}
-        />
-      ))}
+      {Boolean(todos.length) ? (
+        todos.map((todo: ITodo) => (
+          <TodoItem
+            todo={todo}
+            key={todo.id}
+            handleDeleteTodo={handleDeleteTodo}
+            handleToggleCheck={handleToggleCheck}
+          />
+        ))
+      ) : (
+        <div className="w-full h-[244px] mt-12 w-4/5 h-full mx-auto flex flex-col justify-center items-center border-t-[1px] border-lightGray">
+          <MdFoundation size={100} className="text-lightGray"/>
+          <span className="text-base font-bold text-lightGray">You have no tasks registered yet</span>
+          <span className="text-base text-lightGray">Create tasks and organize your To-Dos</span>
+        </div>
+      )}
     </div>
   );
 };
