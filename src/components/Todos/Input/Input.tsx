@@ -20,12 +20,12 @@ const Input: React.FC<Props> = ({ handleAddTodo }) => {
   return (
     <div className="w-full flex items-center justify-center absolute -top-6 gap-2">
       <input
-        className="w-96 h-14 pl-2 bg-gray border-2 border-darkGray text-lightGray placeholder:text-gray-200"
+        className="w-96 h-14 pl-2 bg-gray border-2 border-darkGray rounded-lg text-lightGray placeholder:text-gray-200"
         placeholder={`Enter title's todo`}
         onChange={handleChangeInput}
       />
       <button
-        className="w-24 h-14 bg-blueDark border-2 border-darkGray rounded-md hover:bg-blue-400"
+        className="w-24 h-14 bg-blueDark border-2 border-darkGray rounded-lg hover:bg-blue-400"
         onClick={() => handleClick()}
       >
         <div className="h-full w-full flex items-center justify-center gap-2">
