@@ -21,6 +21,7 @@ const Input: React.FC<Props> = ({ handleAddTodo }) => {
     <div className="w-full flex items-center justify-center absolute -top-6 gap-2">
       <input
         className="w-96 h-14 pl-2 bg-gray border-2 border-darkGray rounded-lg text-lightGray placeholder:text-gray-200"
+        value={query}
         placeholder={`Enter title's todo`}
         onChange={handleChangeInput}
       />
