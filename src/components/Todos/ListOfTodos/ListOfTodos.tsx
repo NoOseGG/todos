@@ -49,7 +49,7 @@ const ListOfTodos: React.FC<Props> = ({
           />
         ))
       ) : (
-        <div className="w-full h-[244px] mt-12 w-4/5 h-full mx-auto flex flex-col justify-center items-center border-t-[1px] border-lightGray">
+        <div className="w-full mt-12 py-12 mx-auto flex flex-col justify-center items-center border-t-[1px] border-lightGray">
           <MdFoundation size={100} className="text-lightGray"/>
           <span className="text-base font-bold text-lightGray">You have no tasks registered yet</span>
           <span className="text-base text-lightGray">Create tasks and organize your To-Dos</span>
